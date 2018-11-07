@@ -13,7 +13,7 @@ public class FixerHTTPManager {
     private String postcodes;
 
     public FixerHTTPManager(){
-        base_url = "http://api.postcodes.io/postcodes/";
+        base_url = "https://api.postcodes.io/postcodes/";
     }
 
     public void setPostcodes(){
