@@ -1,13 +1,11 @@
 package postcodes.io;
 
-/**
- * Hello world!
- *
- */
 public class Main
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        FixerHTTPManager fixerHTTPManager = new FixerHTTPManager ();
+        fixerHTTPManager.setPostcodes();
+        System.out.println (fixerHTTPManager.getPostcodes ());
     }
 }
