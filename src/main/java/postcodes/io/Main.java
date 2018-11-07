@@ -6,6 +6,12 @@ public class Main
     {
         FixerHTTPManager fixerHTTPManager = new FixerHTTPManager ();
         fixerHTTPManager.setPostcodes();
-        System.out.println (fixerHTTPManager.getPostcodes ());
+        JSONFactory jsonFactory = new JSONFactory ();
+
+        jsonFactory.setPostcodeJSON(fixerHTTPManager.getPostcodes ());
+        System.out.println (jsonFactory.getPostcodeJSON().getClass ());
+
+
+
     }
 }
